@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="alpha.js"></script>
+    <script>
+            function input()
+            {
+                if (document.getElementById('nd-py1').checked) {
+                    rate_value = document.getElementById('nd-py1').value;
+                }
+                if (document.getElementById('nd-py2').checked) {
+                    rate_value = document.getElementById('nd-py2').value;
+                }
+                if (document.getElementById('nd-py3').checked) {
+                    rate_value = document.getElementById('nd-py3').value;
+                }
+                document.getElementById('nd-data').innerHTML = rate_value;
+                var input_taker = document.getElementById('plot').value;
+                document.getElementById('nd-data2').innerHTML = input_taker;
+                var total_payment = input_taker*50000;
+                document.getElementById('nd-amount').innerHTML = total_payment;
+            }
+
+            function input1()
+            {
+                if (document.getElementById('ne-py1').checked) {
+                    rate_value = document.getElementById('ne-py1').value;
+                }
+                if (document.getElementById('ne-py2').checked) {
+                    rate_value = document.getElementById('ne-py2').value;
+                }
+                if (document.getElementById('ne-py3').checked) {
+                    rate_value = document.getElementById('ne-py3').value;
+                }
+                document.getElementById('ne-data').innerHTML = rate_value;
+                var input_taker = document.getElementById('plot1').value;
+                document.getElementById('ne-data2').innerHTML = input_taker;
+                var total_payment = input_taker*50000;
+                document.getElementById('ne-amount').innerHTML = total_payment;
+            }
+
+            function input2()
+            {
+                if (document.getElementById('ye-py1').checked) {
+                    rate_value = document.getElementById('ye-py1').value;
+                }
+                if (document.getElementById('ye-py2').checked) {
+                    rate_value = document.getElementById('ye-py2').value;
+                }
+                if (document.getElementById('ye-py3').checked) {
+                    rate_value = document.getElementById('ye-py3').value;
+                }
+                document.getElementById('ye-data').innerHTML = rate_value;
+                var input_taker = document.getElementById('plot2').value;
+                document.getElementById('ye-data2').innerHTML = input_taker;
+                var total_payment = input_taker*50000;
+                document.getElementById('ye-amount').innerHTML = total_payment;
+            }
+            function input3()
+            {
+                if (document.getElementById('po-py1').checked) {
+                    rate_value = document.getElementById('po-py1').value;
+                }
+                if (document.getElementById('po-py2').checked) {
+                    rate_value = document.getElementById('po-py2').value;
+                }
+                if (document.getElementById('po-py3').checked) {
+                    rate_value = document.getElementById('po-py3').value;
+                }
+                document.getElementById('po-data').innerHTML = rate_value;
+                var input_taker = document.getElementById('plot3').value;
+                document.getElementById('po-data2').innerHTML = input_taker;
+                var total_payment = input_taker*50000;
+                document.getElementById('po-amount').innerHTML = total_payment;
+            }
+    </script>
+</head>
+<body onload="basicFun()">
+    <input class="cb" type="checkbox" name="hy" id="in1" onchange="cbChange(this)" checked>
+    <input class="cb" type="checkbox" name="hy" id="in2" onchange="cbChange(this)">
+    <input class="cb" type="checkbox" name="hy" id="in3" onchange="cbChange(this)">
+    <input class="cb" type="checkbox" name="hy" id="in4" onchange="cbChange(this)">
+    <input type="checkbox" name="sliderone" id="in5" onclick="document.getElementById('in6').checked=false">
+    <input type="checkbox" name="sliderone" id="in6" onclick="document.getElementById('in5').checked=false">
+    <input type="checkbox" name="sliderone" id="in7" onclick="document.getElementById('in8').checked=false">
+    <input type="checkbox" name="sliderone" id="in8" onclick="document.getElementById('in7').checked=false">
+    <input type="checkbox" name="sliderone" id="in9" onclick="document.getElementById('in10').checked=false">
+    <input type="checkbox" name="saliderone" id="in10" onclick="document.getElementById('in9').checked=false">
+    <input type="checkbox" name="sliderone" id="in11" onclick="document.getElementById('in12').checked=false">
+    <input type="checkbox" name="sliderone" id="in12" onclick="document.getElementById('in11').checked=false">
+    <header>
+        <section>
+            <div id="menu">
+                <div class="col" id="image">
+                    <img src="images/logo.png" alt="Profile image">
+                </div>
+                <div class="col" id="list">
+                    <ul>
+                        <li>
+                            <label for="in1">Profile</label>
+                        </li>
+                        <li>
+                            <label for="in2">Refferal</label>
+                        </li>
+                        <li>
+                            <label for="in3">Activity</label>
+                        </li>
+                        <li>
+                            <label for="in4">Buy a Plot</label>
+                        </li>
+                        <li>
+                            <a href="index.html">LogOut</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="board">
+                <Div class="row" id="profile">
+                    <div class="container">
+                        <div class="row" id="name_img">
+                            <div class="col" id="one">
+                                <span>Name :<p id="first_name">Santhosh</p></span>
+                                <span><p id="last_name">Bosku</p></span>
+                                <br>
+                                <span>Father/ Gaurdian :<p id="gaurdian">Prabhakar</p></span>
+                                <span>DOB :<p id="DOB">18-10-1198</p></span>
+                                 <br>
+                                <span>Mail ID :<p id="mail">santhoshbablu1997@gmail.com</p></span>  
+                                <br>                      
+                                <span>PAN Number :<p id="pan_num">EHHPB5742J</p></span>
+                                <span>Contact Number :<P id="contact_number">73066615045</P></span>
+                            </div>
+                            <div class="col" id="two">
+                                <img src="images/logo.png" alt="">
+                                <span>ID:<p id="ID">santhosh3155</p></span>
+                                <input type="submit" value="Edit">
+                            </div>
+                        </div>
+                        <span style="text-align: center; font-weight: bolder;">Reffered By:<p id="reffered_by">santhosh5513</p></span>
+
+                    </div>
+                </Div>
+                <Div class="row" id="refferal">
+                    <div class="container">
+                        <table>
+                            <thead>
+                                <th>S. No</th>
+                                <th>Reffered By</th>
+                                <th>Reffered To</th>
+                                <th>Date</th>
+                                <th>Refferal Amount</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Santhosh5513</td>
+                                    <td>santhosh3155</td>
+                                    <td>2-7-2001</td>
+                                    <td>12000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </Div>
+                <Div class="row" id="activity">
+                    <div class="container">
+                        <table>
+                            <thead>
+                                <th>S. No</th>
+                                <th>Village</th>
+                                <th>Payment Type</th>
+                                <th>No. of Plots</th>
+                                <th>Date</th>
+                                <th>Amount</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>nidigonda</td>
+                                    <td>Full Payment</td>
+                                    <td>01</td>
+                                    <td>28-1-2021</td>
+                                    <td>120000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </Div>
+                <Div class="row" id="buy-a-plot">
+                    <form action="dashboard.html" method="get">
+                        <div class="col" id="book_a_plot">
+                            <label for="site">Sites:- </label><input type="text" list="sites" name="site_name" id="site">
+                            <br>
+                            <datalist id="sites">
+                                <option value="Nidigonda"></option>
+                                <option value="Nellutla"></option>
+                                <option value="Yeshwanthapoor"></option>
+                                <option value="pochanapet"></option>
+                            </datalist>
+                            <label for="payment">Payment Type:- </label><input type="text" list="payments" name="payments" id="payment">
+                            <br>
+                            <datalist id="payments">
+                                <option value="Advance"></option>
+                                <option value="Full Payment"></option>
+                                <option value="Invesment of land purchase"></option>
+                            </datalist>
+                            <label for="plots">No:of plots:- </label><input type="number" name="no:of_plots" id="plots" min="1" max="40">
+                            <br>
+                            <label for="amount">Amount:- </label><input type="text" name="amount" id="amount">
+                            <br>
+                            
+                        </div>
+                        <input type="submit" value="BUY" >
+                    </form>
+                </Div>
+            </div>
+        </section>
+    </header>
+</body>
+</html>

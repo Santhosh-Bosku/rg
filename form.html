@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="alpha.js"></script>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="logo">
+                <div class="img">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="details">
+                    <h3>Royal Groups</h3>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" name="firstname" id="f-name" placeholder="First Name">
+                <input type="text" name="surenmae" id="s-name" placeholder="Last Name">
+                <input type="text" name="guardianname" id="g-name" placeholder="Father/ Guardian Name">
+                <input type="date" name="dob" id="dob" placeholder="DOB">
+                <br>
+                <input type="email" name="mailid" id="mail-id" placeholder="Email">
+                <input type="email" name="c-mailid" id="c-mailid" placeholder="Confrim Email">
+                <input type="text" name="pannum" id="pan-num" placeholder="PAN Number">
+                <label for="pan-pic">Upload PAN</label>
+                <input type="file" name="panpic" id="pan-pic" placeholder="PAN pic" onchange="readURL(this);">
+                <p><span><sup>*</sup>PAN Front Image</span></p>
+                <br>
+                <img id="blah" src="#" alt="your image" style="display: none;">
+                <br>
+                <input type="text" name="phonenum" id="phone-num" placeholder="Contact Number">
+                <label for="profile-pic">Upload Profile Image</label>
+                <input type="file" name="profilepic" id="profile-pic" placeholder="" onchange="readURLTWO(this)";>
+                <br>
+                <img id="two" src="#" alt="your profile img" style="display: none;">
+                <br>
+                <input type="text" name="refferal" id="refferal" placeholder="Refferal ID">
+                <br>
+                <span><label for="in1"><input type="checkbox" name="Agree" id="in1">I Agree to all Conditions of the royal groups</label></span>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

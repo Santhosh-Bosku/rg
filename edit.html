@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <link rel="stylesheet" href="edit.css">
+    <script src="alpha.js"></script>
+    <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div id="logo">
+                <div class="img">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <div class="details">
+                    <h3>Royal Groups</h3>
+                </div>
+            </div>
+            <form action="">
+                <input type="text" name="firstname" id="f-name" placeholder="First Name">
+                <input type="text" name="surenmae" id="s-name" placeholder="Last Name">
+                <input type="text" name="guardianname" id="g-name" placeholder="Father/ Guardian Name">
+                <input type="date" name="dob" id="dob" placeholder="DOB">
+                <br>
+                <input type="email" name="mailid" id="mail-id" placeholder="Email">
+                <input type="email" name="c-mailid" id="c-mailid" placeholder="Confrim Email">
+                <input type="password" name="password" id="password" placeholder="Password">
+                <input type="password" name="c-password" id="c-password" placeholder="Confrim Password">
+                <br>
+                <input type="text" name="phonenum" id="phone-num" placeholder="Contact Number">
+                <label for="profile-pic">Upload Profile Image</label>
+                <input type="file" name="profilepic" id="profile-pic" placeholder="" onchange="readURLthree(this)";>
+                <br>
+                <img id="three" src="#" alt="your profile img" style="display: none;">
+                <span id="error">display error here</span>
+                <button type="submit">Confrim Changes</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
