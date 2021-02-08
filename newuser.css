@@ -202,7 +202,7 @@ header section .container .row form input::placeholder
     color: black;
 }
 
-header section .container .row form #sa
+header section .container .row form .sa
 {
     width: 22vw;
     height: 40px;
@@ -211,18 +211,17 @@ header section .container .row form #sa
     color: white;
     background-color: black;
     border: 1px black solid;
-    /* border-radius: 10px; */
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none !important;
     text-align: center;
-    margin: auto 0;
+    margin: auto 0 !important;
     padding: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-header section .container .row form #sa:hover
+header section .container .row form .sa:hover
 {
     box-shadow: 0px 0px 5px white;
 }
