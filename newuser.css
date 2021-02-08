@@ -202,21 +202,27 @@ header section .container .row form input::placeholder
     color: black;
 }
 
-header section .container .row form button
+header section .container .row form #sa
 {
     width: 22vw;
     height: 40px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bolder;
-    margin: 25px 0 0 0;
     color: white;
     background-color: black;
     border: 1px black solid;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    margin: auto 0;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-header section .container .row form button:hover
+header section .container .row form #sa:hover
 {
     box-shadow: 0px 0px 5px white;
 }
